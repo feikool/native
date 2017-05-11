@@ -16,11 +16,17 @@ export default class Template extends Component {
   render() {
     return (
       <View style={styles.container}>
-
+          {this.renderAllBadge()}
       </View>
     );
   }
+    // 返回所有的包
+    renderAllBadge(){
+        var allBadge =[];
+
+    }
 }
+
 
 const styles = StyleSheet.create({
   container: {
