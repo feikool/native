@@ -9,7 +9,7 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View, Image
 } from 'react-native';
 const Dimensions = require('Dimensions');
 
@@ -21,6 +21,7 @@ export default class Template extends Component {
     return (
       <View style={styles.container}>
           {this.renderAllBadge()}
+          <Text>55555</Text>
       </View>
     );
   }
@@ -28,15 +29,17 @@ export default class Template extends Component {
     renderAllBadge(){
         var allBadge =[];
     for(let i=0;i<BadgeData.length;i++){
-        var badge = BadgeData[i];
+        var badge = BadgeData.data[i];
         allBadge.push(
             <View style={styles.outViewStyle}>
-                <Image style={styles.imageStyle}/>
-                <Text style={styles.textStyle}></Text>
+                <Image source={{uri:badge.icon}} style={styles.imageStyle}/>
+                <Text style={styles.textStyle}>{badge.title}</Text>
             </View>
         )
     }
+        return allBadge;
     }
+
 }
 
 
@@ -57,6 +60,12 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+    outViewStyle:{
+
+    },
+    textStyle:{
+
+    }
 });
 
 AppRegistry.registerComponent('Template', () => Template);
