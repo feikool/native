@@ -9,62 +9,27 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View, Image
+  View, Image,TextInput
 } from 'react-native';
 const Dimensions = require('Dimensions');
 
 // 导入json数据
-var BadgeData = require('./BadgeData.json');
-
+const BadgeData = require('./BadgeData.json');
 export default class Template extends Component {
   render() {
     return (
-      <View style={styles.container}>
-          {this.renderAllBadge()}
-          <Text>55555</Text>
+      <View>
+          <TextInput style={styles.inputStyle} keyboardType={'phone-pad'}/>
       </View>
     );
   }
-    // 返回所有的包
-    renderAllBadge(){
-        var allBadge =[];
-    for(let i=0;i<BadgeData.length;i++){
-        var badge = BadgeData.data[i];
-        allBadge.push(
-            <View style={styles.outViewStyle}>
-                <Image source={{uri:badge.icon}} style={styles.imageStyle}/>
-                <Text style={styles.textStyle}>{badge.title}</Text>
-            </View>
-        )
-    }
-        return allBadge;
-    }
-
 }
-
-
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-    outViewStyle:{
-
-    },
-    textStyle:{
-
+    inputStyle:{
+        width:300,
+        height:60,
+        borderWidth:1,
+        borderColor:'#e8e8e8',
     }
 });
 
