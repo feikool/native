@@ -16,15 +16,7 @@ export default class Template extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-         当前屏幕宽度：{Dimensions.get('window').width}
-        </Text>
-        <Text style={styles.welcome}>
-          高度：{Dimensions.get('window').height}
-        </Text>
-        <Text style={styles.welcome}>
-          分辨率：{Dimensions.get('window').scale}
-        </Text>
+
       </View>
     );
   }
