@@ -12,6 +12,10 @@ import {
   View
 } from 'react-native';
 const Dimensions = require('Dimensions');
+
+// 导入json数据
+var BadgeData = require('./BadgeData.json');
+
 export default class Template extends Component {
   render() {
     return (
@@ -23,7 +27,15 @@ export default class Template extends Component {
     // 返回所有的包
     renderAllBadge(){
         var allBadge =[];
-
+    for(let i=0;i<BadgeData.length;i++){
+        var badge = BadgeData[i];
+        allBadge.push(
+            <View style={styles.outViewStyle}>
+                <Image style={styles.imageStyle}/>
+                <Text style={styles.textStyle}></Text>
+            </View>
+        )
+    }
     }
 }
 
