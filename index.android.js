@@ -6,14 +6,14 @@
 
 import React, { Component } from 'react';
 import {
-  AppRegistry,View
+  AppRegistry,View,Text
 } from 'react-native';
-import LoginView from './components/login';
+import Login from './components/login';
 // 导入json数据
 export default class Template extends Component {
   render() {
     return (
-        <View> <LoginView /></View>
+        <View><Login/></View>
     );
   }
 }
