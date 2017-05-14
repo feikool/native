@@ -1,28 +1,24 @@
 {
   "data":[
     {
-      "icon":"danjianbao",
+//      "icon":"/img/1.jpg",
+      "icon":"http://m.qiyipic.com/common/lego/20170513/b911288073a844c2bc20c887fef7ce29.jpg",
       "title":"单肩背包"
     },
     {
-      "icon":"liantiaobao",
+//      "icon":"/img/1.jpg",
+      "icon":"http://m.qiyipic.com/common/lego/20170511/c16faf9a1bd74a479e98f1e9d2459e06.jpg",
       "title":"链条包"
     },
     {
-      "icon":"shoutibao",
+//      "icon":"/img/1.jpg",
+      "icon":"http://m.qiyipic.com/common/lego/20170512/2af229c9e73a42cdbb5d96fb96798a75.jpg",
       "title":"手提包"
     },
     {
-      "icon":"shuangjianbao",
+//      "icon":"/img/1.jpg",
+      "icon":"http://m.qiyipic.com/common/lego/20170512/73e33b0c73a24dada48aa4e74821f750.jpg",
       "title":"双肩包"
-    },
-    {
-      "icon":"xiekuabao",
-      "title":"斜挎包"
-    },
-    {
-      "icon":"danjianbao",
-      "title":"单肩背包"
     }
   ]
 }
